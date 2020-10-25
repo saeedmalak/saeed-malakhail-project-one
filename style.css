@@ -8,21 +8,53 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* Setting font families & basic default styling  */
+html {
+    font-size: 62.5%;
+}
+
+body, button, p {
+  font-family: 'Catamaran', sans-serif;
+}
+
+button {
+  background-color: #1F2022;
+  color: #F2A11C;
+  font-size: 1.8rem;
+  line-height: 29px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.read-button:hover, .read-button:focus {
+  background-color: #444343;
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+}
+
 /* Wrapper class */
 .wrapper {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* HEADER styles */
+
 header {
   background-image: url('./biker-land-assets/image-1.jpg');
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .menu-bar {
   text-align: center;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .menu-bar li {
@@ -34,4 +66,71 @@ header {
   margin: 10px;
   text-decoration: none;
   color: white;
+  font-size: 2rem;
+}
+
+.header-content {
+  position: relative;
+  min-height: 90vh;
+}
+
+h1 {
+  font-size: 13rem;
+  color: #F2A11C; 
+  width: 100%;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+.social-icons {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.social-icons li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 10px;
+  text-decoration: none;
+  color: #F2A11C; 
+}
+
+/* MAIN Styles */
+/* About section */
+
+.about-us {
+  height: 80vh;
+}
+
+.about-us-content {
+  width: 50%;
+  float: left;
+  margin: 120px 0 0 0;
+  padding-right: 45px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 4.2rem;
+}
+
+.about-us p {
+  font-size: 2rem;
+}
+
+.about-us-image {
+  background-image: url('./biker-land-assets/image-2.jpg');
+  background-position: 50% 50%;
+  max-height: 100%;
+  /* max-height: 0; */
+  min-height: 100%;
+  width: 50%;
+  float: left;
 }
