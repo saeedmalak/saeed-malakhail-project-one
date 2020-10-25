@@ -36,6 +36,20 @@ h1, h2 {
   font-family: 'Pacifico', cursive;
 }
 
+h2 {
+  margin: 0;
+  font-size: 4.2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 /* Wrapper class */
 .wrapper {
     width: 80%;
@@ -78,7 +92,7 @@ h1 {
   font-size: 13rem;
   color: #F2A11C; 
   width: 100%;
-  margin: 30px 0 0 0;
+  margin: 200px 0 0 0;
   text-align: center;
 }
 
@@ -103,34 +117,231 @@ h1 {
 }
 
 /* MAIN Styles */
-/* About section */
-
-.about-us {
-  height: 80vh;
-}
+/* ABOUT US section */
 
 .about-us-content {
-  width: 50%;
+  width: calc(50% - 60px);
   float: left;
-  margin: 120px 0 0 0;
-  padding-right: 45px;
-}
-
-h2 {
-  margin: 0;
-  font-size: 4.2rem;
-}
-
-.about-us p {
-  font-size: 2rem;
+  margin: 120px 60px 0 0;
 }
 
 .about-us-image {
-  background-image: url('./biker-land-assets/image-2.jpg');
-  background-position: 50% 50%;
-  max-height: 100%;
-  /* max-height: 0; */
-  min-height: 100%;
   width: 50%;
   float: left;
 }
+
+.about-us-image .img2 {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* OUR MISSION styles */
+.our-mission-image {
+  width: 50%;
+  float: left;
+}
+
+.img7 {
+  height: 500px;
+  object-fit: cover;
+}
+
+.our-mission-content {
+  width: calc(50% - 60px);
+  float: left;
+  margin: 120px 0 0 60px;
+}
+
+/* BIO SECTION styles */
+.bio-section {
+  background-color: #F4F4F4;
+  padding-bottom: 100px;
+}
+
+.img-container {
+  width: 25%;
+  float: left;
+  margin-top: 120px;
+}
+
+.img6 {
+  height: 230px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.bio-content {
+  width: 75%;
+  float: left;
+  margin: 120px 0 0 0;
+}
+
+/* PRODUCTS-SERVICES styles */
+.products-services {
+  background-image: url('./biker-land-assets/image-5.jpg');
+  background-size: cover;
+  position: relative;
+  min-height: 80vh;
+}
+
+.product-icons {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  position: absolute;
+  top: 45%;
+  left: 36%;
+}
+
+.product-icons li {
+  display: inline-block;
+}
+
+.product-icons a {
+  margin: 0 100px 0 0;
+  text-decoration: none;
+  color: #FFFFFF; 
+}
+
+.product-content {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 63%;
+  left: 36%;
+}
+
+.product-content li {
+  display: inline-block;
+}
+
+.product-content p {
+  text-decoration: none;
+  color: #F2A11C; 
+}
+
+.product-content > li:nth-child(1) > p:nth-child(1) {
+  margin: 0 0 0 -5px;
+}
+
+.product-content > li:nth-child(2) > p:nth-child(1) {
+  margin: 0 0 0 85px;
+}
+
+.product-content > li:nth-child(3) > p:nth-child(1) {
+  margin: 0 0 0 80px;
+}
+
+/* GALLERY SECTION styles */
+.gallery {
+  padding: 100px 0;
+}
+
+.gallery > div:nth-child(1) > h2:nth-child(1) {
+text-align: center;
+}
+
+.gallery-container {
+  margin-top: 60px;
+}
+
+.img2, .img3, .img4 {
+  float:left;
+  height: 400px;
+  width: calc((100%/3) - 27px);
+  object-fit: cover;
+}
+
+.img2, .img3 {
+  margin-right: 40px;
+}
+
+/* FOOTER SECTION styles  */
+footer {
+  padding-top: 40px;
+  height: 50vh;
+  background-color: #1F2022;
+}
+
+body > footer:nth-child(3) > div:nth-child(1) > nav:nth-child(1) > ul:nth-child(1) > li > a {
+  text-transform: uppercase;
+}
+
+body > footer:nth-child(3) > div:nth-child(1) > nav:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  float:left;
+  width: 50%;
+}
+
+.contact-container > h2:nth-child(1) {
+  color: #F2A11C;
+  font-size: 3rem;
+}
+
+.contact-container > p {
+  color: #F4F4F4;
+  font-size: 1.5rem;
+}
+
+.subscribe-container {
+  float:left;
+}
+
+.subscribe-container > h2:nth-child(1) {
+  color: #F2A11C;
+  font-size: 3rem;
+}
+
+.subscribe-container > p {
+  color: #F4F4F4;
+  font-size: 1.5rem;
+}
+
+.form1 {
+  width: 500px;
+  height: 16vh;
+}
+
+#email {
+  float: left;
+  height: 20px;
+  padding: 20px;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+.submit-button > button:nth-child(1) {
+  width: 25%;
+  float: left;
+  padding: 6.5px;
+  background-color: #F2A11C;
+  margin-left: -1px;
+  margin-bottom: 0;
+  color: #000000ba;
+}
+
+/* COPYRIGHT SECTION styles */
+.copyright-section {
+  height: 10vh;
+  background-color: #000000;
+}
+
+.copyright-section p {
+  margin: 0;
+  padding: 15px 0;
+  color: #F4F4F4;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.copyright-section a {
+  color: #ff69b4;
+}
+
+
