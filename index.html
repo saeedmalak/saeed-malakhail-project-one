@@ -15,12 +15,15 @@
   <!-- Header -->
   <header>
     <div class="wrapper">
-      <nav class="nav-container">
-        <ul class="menu-bar">
+      <nav>
+        <!-- Create the menu using a hidden checkbox -->
+        <label for="toggle"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="toggle" name="toggle" />
+        <ul class="menu-bar menu-bar1 clearfix">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-content">
@@ -49,7 +52,7 @@
 
   <!-- Main -->
   <main>
-    <section class="about-us clearfix">
+    <section id="about" class="about-us clearfix">
       <div class="wrapper">
         <div class="about-us-content">
           <div>
@@ -96,7 +99,7 @@
       </div>
     </section>
 
-    <section class="products-services">
+    <section id="blog" class="products-services">
       <ul class="product-icons">
         <li>
           <a href="#" aria-label="Bikerland's Products page">
@@ -128,7 +131,7 @@
       <div class="wrapper clearfix">
         <h2>The Gram</h2>
         <div class="gallery-container">
-          <img class="img2" src="./biker-land-assets/image-2.jpg" alt="lady riding a bicycle">
+          <img class="img8" src="./biker-land-assets/image-8.jpg" alt="lady riding a bicycle">
           <img class="img3" src="./biker-land-assets/image-3.jpg" alt="bike racing tournament">
           <img class="img4" src="./biker-land-assets/image-4.jpg" alt="bike parked by the side of the house">
         </div>
@@ -137,9 +140,9 @@
   </main>
 
   <footer>
-    <div class="wrapper clearfix">
+    <div id="contact" class="wrapper clearfix">
       <nav class="nav-container">
-        <ul class="menu-bar">
+        <ul class="menu-bar1">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
